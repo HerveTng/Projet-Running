@@ -31,59 +31,8 @@
                     deserunt mollit anim id est laborum.
                 </p>
             </section>
-            <section class="container_activite">
-                <div class="activite">
-                    <h2>Course A Pieds</h2>
-                    <table>
-                        <tr>
-                            <td><strong>Date</strong></td>
-                            <td>11 avril 2024</td>
-                        </tr>
-                        <tr>
-                            <td><strong>heure</strong></td>
-                            <td>16h30</td>
-                        </tr>
-                        <tr>
-                            <td><strong>lieu</strong></td>
-                            <td>3 rue pierre curie</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="activite">
-                    <h2>Course A Pieds</h2>
-                    <table>
-                        <tr>
-                            <td><strong>Date</strong></td>
-                            <td>11 avril 2024</td>
-                        </tr>
-                        <tr>
-                            <td><strong>heure</strong></td>
-                            <td>16h30</td>
-                        </tr>
-                        <tr>
-                            <td><strong>lieu</strong></td>
-                            <td>3 rue pierre curie</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="activite">
-                    <h2>Course A Pieds</h2>
-                    <table>
-                        <tr>
-                            <td><strong>Date</strong></td>
-                            <td>11 avril 2024</td>
-                        </tr>
-                        <tr>
-                            <td><strong>heure</strong></td>
-                            <td>16h30</td>
-                        </tr>
-                        <tr>
-                            <td><strong>lieu</strong></td>
-                            <td>3 rue pierre curie</td>
-                        </tr>
-                    </table>
-                </div>
-
+            <section>
+                
             </section>
 
         </main>

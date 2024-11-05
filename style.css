@@ -30,10 +30,6 @@
 .description_activite{
     width: 30%
 }
-.container_activite{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 .activite{
     border: 1px black solid;
     margin:10px;
