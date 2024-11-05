@@ -15,7 +15,7 @@ include('head.php');
         'Mail'=>$mail,
         'Nom'=>$nom,
         'Prenom'=>$prenom,
-        'Mot_de_passe'=>$password
+        'mot_de_passe'=>$password
     ));
 
 ?>
