@@ -17,13 +17,13 @@
         $password=$_POST['Mot_de_passe'];
 
         //prepare la requête pour eviter les injection sql
-        $resultat = $mysqli->prepare("SELECT mot_de_passe FROM membresimple WHERE adresse_mail = :mail");
+        $resultat = $mysqli->prepare("SELECT mot_de_passe FROM membresimple WHERE adresse_mail = ?");
         $resultat->bind_param("s",$email);
         $resultat->execute();
         $resultat->store_result();
 
         //verifie si l'utilisateur existe
-        if($resultat->$num_rows>0){
+        if($resultat->num_rows>0){
             $resultat->bind_result($hashed_password);
             $resultat->fetch();
 
