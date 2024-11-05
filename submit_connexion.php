@@ -23,7 +23,7 @@
         $resultat->store_result();
 
         //verifie si l'utilisateur existe
-        if($resultat->$num_rows>0){
+        if($resultat->num_rows>0){
             $resultat->bind_result($hashed_password);
             $resultat->fetch();
 
