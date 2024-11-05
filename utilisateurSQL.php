@@ -9,7 +9,7 @@ include('head.php');
     $prenom = $_POST['prenom'];
     $password = $_POST['password'];
 
-    $satement = $db->prepare("INSERT INTO `membre simple` (Mail, Nom, Prenom, `Mot_de_passe`) VALUES (:Mail, :Nom, :Prenom, :Mot_de_passe)");
+    $satement = $db->prepare("INSERT INTO `membresimple` (adresse_mail, nom, prenom, mot_de_passe) VALUES (:Mail, :Nom, :Prenom, :mot_de_passe)");
 
     $satement->execute(array(
         'Mail'=>$mail,
