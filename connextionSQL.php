@@ -5,7 +5,7 @@ $pass = '2WFYYWGcTsokJt';
 
 try 
 {
-    $db = new PDO('mysql:host=moduleweb.esigelec.fr/grp_7_1;dbname=bdd_7_1',$user ,$pass);
+    $db = new PDO('mysql:host=localhost;dbname=bdd_7_1',$user ,$pass);
 
 } catch (Exception $e) 
 {
