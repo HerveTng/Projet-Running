@@ -1,0 +1,52 @@
+.logo{
+    width: 20%;
+    height: 10%;
+}
+.bouton{
+    border: 1px black solid;
+    margin:10px;
+    padding: 5px;
+    width: 25%;
+    border-radius: 10px;
+}
+.container{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+.nom_asso{
+    text-align: center;
+    font-size: 50px;
+}
+.description{
+    text-align: center;
+    border: 2px skyblue solid;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+    width: 60%;
+}
+.description_activite{
+    width: 30%
+}
+.container_activite{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.activite{
+    border: 1px black solid;
+    margin:10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 60%;
+}
+.bouton_inscription{
+    text-align: center;
+    border: 1px black solid;
+    margin:10px;
+    padding: 5px;
+    width: 25%;
+    border-radius: 10px;
+    
+}
