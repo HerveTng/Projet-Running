@@ -1,6 +1,6 @@
 <?php
     //connexion à la base de données 
-    $host='moduleweb.esigelec.fr';
+    /*$host='moduleweb.esigelec.fr';
     $login='grp_7_1';
     $password='2WFYYWGcTsokJt';
     $dbname='bdd_7_1';
@@ -9,7 +9,9 @@
     if($mysqli->connect_error){
         die("echec de la connexion:".$mysqli->connect_error);
     }
-
+    */
+    include('connextionSQL.php');
+    
     //verifie si les champs emails et mot de passe sont remplis
     if($_SERVER["REQUEST_METHOD"]=="POST"){
         $email=$_POST['Adresse_mail'];

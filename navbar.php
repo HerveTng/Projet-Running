@@ -14,6 +14,7 @@
         </li>
       </ul>
       <a class="btn btn-primary" href="inscription.php" role="button">Inscription</a>
+      <a class="btn btn-primary" href="connexion.php" role="button">Conextion</a>
     </div>
   </div>
 </nav>
