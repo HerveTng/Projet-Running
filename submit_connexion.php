@@ -17,7 +17,7 @@
         $password=$_POST['Mot_de_passe'];
 
         //prepare la requête pour eviter les injection sql
-        $resultat = $mysqli->prepare("SELECT mot_de_passe FROM membresimple WHERE adresse_mail = :mail");
+        $resultat = $mysqli->prepare("SELECT mot_de_passe FROM membresimple WHERE adresse_mail = ?");
         $resultat->bind_param("s",$email);
         $resultat->execute();
         $resultat->store_result();
