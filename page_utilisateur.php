@@ -20,59 +20,27 @@
         </nav>
 
         <main>
-            <section class="container_activite">
+            <section>
+            <?php include('connextionSQL.php'); ?>
+                <?php
+                    $statement=$db->prepare('SELECT * FROM entrainement');
+                    $statement->execute();
+                    $training= $statement->fetchAll();
+                ?>
+                <h1> LISTE DES ENTRAINEMENT </h1>
+                <?php foreach($training as $train):?>
                 <div class="activite">
-                    <h2>Course A Pieds</h2>
-                    <table>
-                        <tr>
-                            <td><strong>Date</strong></td>
-                            <td>11 avril 2024</td>
-                        </tr>
-                        <tr>
-                            <td><strong>heure</strong></td>
-                            <td>16h30</td>
-                        </tr>
-                        <tr>
-                            <td><strong>lieu</strong></td>
-                            <td>3 rue pierre curie</td>
-                        </tr>
-                    </table>
+                    <h3><?php echo($train['titre']) ?></h3>
+                    <p><strong>date :</stong> <?php echo($train['date']) ?></p>
+                    <p><strong>lieu :</stong> <?php echo($train['lieu']) ?></p>
+                    <p><strong>heure :</stong> <?php echo($train['heure']) ?></p>
+                    <p>categorie : <?php echo($train['categorie']) ?></p>
+                    <p>Nombre Maximum : <?php echo($train['nombre_Max']) ?></p>
+                    <p>description : <?php echo($train['description']) ?></p>
+                    
                 </div>
-                <div class="activite">
-                    <h2>Course A Pieds</h2>
-                    <table>
-                        <tr>
-                            <td><strong>Date</strong></td>
-                            <td>11 avril 2024</td>
-                        </tr>
-                        <tr>
-                            <td><strong>heure</strong></td>
-                            <td>16h30</td>
-                        </tr>
-                        <tr>
-                            <td><strong>lieu</strong></td>
-                            <td>3 rue pierre curie</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="activite">
-                    <h2>Course A Pieds</h2>
-                    <table>
-                        <tr>
-                            <td><strong>Date</strong></td>
-                            <td>11 avril 2024</td>
-                        </tr>
-                        <tr>
-                            <td><strong>heure</strong></td>
-                            <td>16h30</td>
-                        </tr>
-                        <tr>
-                            <td><strong>lieu</strong></td>
-                            <td>3 rue pierre curie</td>
-                        </tr>
-                    </table>
-                </div>
-
+                <?php endforeach ?>
+                
             </section>
 
         </main>
