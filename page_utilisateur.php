@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Accueil</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     </head>
     <body>
         <header>
@@ -37,7 +38,7 @@
                     <p>categorie : <?php echo($train['categorie']) ?></p>
                     <p>Nombre Maximum : <?php echo($train['nombre_Max']) ?></p>
                     <p>description : <?php echo($train['description']) ?></p>
-                    
+                    <a class="btn btn-primary" href="connexion.php" role="button">S'inscrire</a>
                 </div>
                 <?php endforeach ?>
                 
