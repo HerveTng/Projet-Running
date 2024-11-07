@@ -32,7 +32,16 @@
                 </p>
             </section>
             <section>
-                
+                <?php include('connextionSQL.php'); ?>
+                <?php
+                    $statement=$db->prepare('SELECT * FROM entrainement');
+                    $statement->execute();
+                    $training= $statement->fetchAll();
+                ?>
+                <h1> LISTE DES ENTRAINEMENT </h1>
+                <?php foreach($training as $train):?>
+                <h3><?php echo($train['titre']) ?></h3>
+                <?php endforeach ?>
             </section>
 
         </main>
