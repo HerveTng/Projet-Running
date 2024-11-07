@@ -6,9 +6,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <img src="logo_esigelec.jpg" alt="voici le logo de l'esigelec" class="logo">
-        <header>
+
+        
         
         <?php
             session_start();
