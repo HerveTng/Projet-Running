@@ -1,31 +1,33 @@
 <?php
 include('connextionSQL.php');
-include('head.php');
+//include('head.php');
 
+$mail = $_POST['email'];
+$nom = $_POST['nom'];
+$prenom = $_POST['prenom'];
+$password = $_POST['password'];
 
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    $mail = $_POST['email'];
-    $nom = $_POST['nom'];
-    $prenom = $_POST['prenom'];
-    $password = $_POST['password'];
+$satement = $db->prepare("INSERT INTO `membresimple` (adresse_mail, nom, prenom, mot_de_passe, is_membreClub) VALUES (:Mail, :Nom, :Prenom, :mot_de_passe, 0)");
 
-    $satement = $db->prepare("INSERT INTO `membresimple` (adresse_mail, nom, prenom, mot_de_passe, is_membreClub) VALUES (:Mail, :Nom, :Prenom, :mot_de_passe, 0)");
-
-    $satement->execute(array(
-        'Mail'=>$mail,
-        'Nom'=>$nom,
-        'Prenom'=>$prenom,
-        'mot_de_passe'=>$password
-    ));
+$satement->execute(array(
+    'Mail' => $mail,
+    'Nom' => $nom,
+    'Prenom' => $prenom,
+    'mot_de_passe' => $hashedPassword
+));
 
 ?>
-<div class="container text-center">
-    <div class = "row">
-        <div class = "container square-box d-flex justify-content-center align-items-center">
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 55vh; padding-top: 3vh;">
+        <div class="card p-4" style="max-width: 800px; width: 100%;">
             <h1> Vous éte inscri </h1>
+            <div class="container">
+                <a class="btn btn-primary" href="index.php" role="button">Retour à l'Acceuil</a>
+            </div>
         </div>
     </div>
-    <div class = "row">
-        <a class="btn btn-primary" href="index.php" role="button">Retour à l'Acceuil</a>
     </div>
-</div>
+</body>

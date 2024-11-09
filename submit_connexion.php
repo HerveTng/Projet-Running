@@ -1,6 +1,6 @@
 <?php
     //connexion à la base de données 
-    $host='localhost';
+    /*$host='localhost';
     $login='grp_7_1';
     $password='2WFYYWGcTsokJt';
     $dbname='bdd_7_1';
@@ -39,5 +39,5 @@
         $resultat->close();
 
     }
-    $mysqli->close();
+    $mysqli->close();*/
 ?>

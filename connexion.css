@@ -1,0 +1,36 @@
+.logo{
+    width: 20%;
+    height: 10%;
+}
+
+.logo2{
+    width: 30%;
+    height: 30%;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.formcon{
+    text-align: center;
+}
+
+.btn-espace {
+    margin-left: 10px; 
+}
+
+.espace-bas{
+    margin-bottom: 10px; 
+}
+
+.espace-haut{
+    margin-top: 10px;
+}
+
+.card {
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.back{
+    background-color: #f4f4f9;
+}
