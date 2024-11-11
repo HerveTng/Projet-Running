@@ -16,7 +16,7 @@ include('navbar.php');
 <body class="back">
     <main>
         <div class="container d-flex justify-content-center align-items-center">
-            <div class="card back2 p-4" style="max-width: 900px; width: 100%;">
+            <div class="card back2 p-4" style="max-width: 1000px; width: 100%;">
                 <div class="row">
                     <p class="encadre">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -44,23 +44,23 @@ include('navbar.php');
                     <h1 class="mt-4"> Liste des entrainement </h1>
                     <div class="justify-content-center">
                         <?php if (isset($_SESSION['user_id'])): ?>
-
-                            <?php foreach ($training as $index => $train): ?>
-                                <form method="POST" action="redirection.php">
-                                    <div class="row row-cols-1 row-cols-md-2 g-4">
-                                        <div class="col">
+                            <div class="row">
+                                <?php foreach ($training as $train): ?>
+                                    
+                                        <div class="col-md-6">
+                                        <form method="POST" action="redirection.php">
                                             <div class="card mt-4">
                                                 <div class="card-body">
                                                     <h5 class="card-title"><?php echo ($train['titre']) ?></h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted"><strong>date :</stong> <?php echo ($train['date']) ?></h6>
-                                                    <p class="card-text"><strong>lieu :</stong> <?php echo ($train['lieu']) ?></p>
-                                                    <p class="card-text"><strong>heure :</stong> <?php echo ($train['heure']) ?></p>
-                                                    <p class="card-text"><strong>categorie :</stong> <?php echo ($train['categorie']) ?></p>
-                                                    <p class="card-text"><strong>Nombre maximun :</stong> <?php echo ($train['nombre_Max']) ?></p>
-                                                    <p class="card-text"><strong>description :</stong> <?php echo ($train['description']) ?></p>
-
+                                                    <h6 class="card-subtitle mb-2 text-muted"><strong>date :</strong> <?php echo ($train['date']) ?></h6>
+                                                    <p class="card-text"><strong>lieu :</strong> <?php echo ($train['lieu']) ?></p>
+                                                    <p class="card-text"><strong>heure :</strong> <?php echo ($train['heure']) ?></p>
+                                                    <p class="card-text"><strong>categorie :</strong> <?php echo ($train['categorie']) ?></p>
+                                                    <p class="card-text"><strong>Nombre maximun :</strong> <?php echo ($train['nombre_Max']) ?></p>
+                                                    <p class="card-text"><strong>description :</strong> <?php echo ($train['description']) ?></p>
+                                                    
                                                     <input type="hidden" name="entrainement_Id" value="<?php echo htmlspecialchars($train['entrainement_Id']); ?>">
-
+                                                    
                                                     <?php
                                                     $userInscrit = false ?>
                                                     <?php foreach ($list as $list_inscri): ?>
@@ -117,39 +117,34 @@ include('navbar.php');
                                                     <?php endif; ?>
                                                 </div>
                                             </div>
+                                            </form>
                                         </div>
-                                    </div>
-                                </form>
 
-                            <?php endforeach ?>
+                                    
+                                <?php endforeach ?>
+                            </div>
 
                         <?php else: ?>
-
-                            <?php foreach ($training as $train): ?>
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
+                            <div class="row">
+                                <?php foreach ($training as $train): ?>
+                                    <div class="col-md-6">
                                         <div class="card mt-4">
                                             <div class="card-body">
                                                 <h5 class="card-title"><?php echo ($train['titre']) ?></h5>
-                                                <h6 class="card-subtitle mb-2 text-muted"><strong>date :</stong> <?php echo ($train['date']) ?></h6>
-                                                <p class="card-text"><strong>lieu :</stong> <?php echo ($train['lieu']) ?></p>
-                                                <p class="card-text"><strong>heure :</stong> <?php echo ($train['heure']) ?></p>
+                                                <h6 class="card-subtitle mb-2 text-muted"><strong>date :</strong> <?php echo ($train['date']) ?></h6>
+                                                <p class="card-text"><strong>lieu :</strong> <?php echo ($train['lieu']) ?></p>
+                                                <p class="card-text"><strong>heure :</strong> <?php echo ($train['heure']) ?></p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            <?php endforeach ?>
-
+                                <?php endforeach ?>
+                            </div>
                         <?php endif; ?>
-
                     </div>
                 </div>
-
             </div>
         </div>
-
     </main>
-
 </body>
 
 </html>

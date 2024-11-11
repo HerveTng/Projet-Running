@@ -12,7 +12,8 @@ try
     die('Erreur : '.$e->getMessage());
 }
 
-/*$user2 = 'root';
+/*
+$user2 = 'root';
 $pass2 = 'root';
 
 try 

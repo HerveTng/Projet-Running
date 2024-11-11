@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('connextionSQL.php');
 include('head.php');
 
@@ -18,14 +19,16 @@ $statement->execute([
     'mot_de_passe' => $hashedPassword
 ]);
 
+
+
 ?>
 
 <body>
     <div class="container d-flex justify-content-center align-items-center" style="height: 55vh; padding-top: 3vh;">
         <div class="card p-4" style="max-width: 800px; width: 100%;">
-            <h1> Vous éte inscri </h1>
+            <p>Incscription réussi, veuillez vous connectez pour continue </p>
             <div class="container">
-                <a class="btn btn-primary" href="index.php" role="button">Retour à l'Acceuil</a>
+                <a class="btn btn-primary" href="connexion.php" role="button">Se connecte</a>
             </div>
         </div>
     </div>
