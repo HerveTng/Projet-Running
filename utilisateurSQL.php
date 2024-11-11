@@ -1,6 +1,6 @@
 <?php
 include('connextionSQL.php');
-//include('head.php');
+include('head.php');
 
 $mail = $_POST['email'];
 $nom = $_POST['nom'];
@@ -9,14 +9,14 @@ $password = $_POST['password'];
 
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-$satement = $db->prepare("INSERT INTO `membresimple` (adresse_mail, nom, prenom, mot_de_passe, is_membreClub) VALUES (:Mail, :Nom, :Prenom, :mot_de_passe, 0)");
+$statement = $db->prepare("INSERT INTO membresimple (adresse_mail, nom, prenom, mot_de_passe, is_membreClub) VALUES (:Mail, :Nom, :Prenom, :mot_de_passe, 0)");
 
-$satement->execute(array(
+$statement->execute([
     'Mail' => $mail,
     'Nom' => $nom,
     'Prenom' => $prenom,
     'mot_de_passe' => $hashedPassword
-));
+]);
 
 ?>
 

@@ -7,7 +7,7 @@ include('navbar.php');
 ?>
 
 <body class="back">
-    <div class="container d-flex justify-content-center align-items-center" style="height: 55vh; padding-top: 3vh;">
+    <div class="container d-flex justify-content-center align-items-center" style="height: 55vh; padding-top: 8vh;">
         <div class="card p-4" style="max-width: 800px; width: 100%;">
             <h2 class="text-center mb-4">Création d'un compte</h2>
             <form method="POST" action="utilisateurSQL.php">

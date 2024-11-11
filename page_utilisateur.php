@@ -2,24 +2,17 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Accueil</title>
         <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     </head>
+
+    <?php
+    $titre = "Accueil";
+
+    include('head.php');
+    include('navbar.php');
+    ?>
+    
     <body>
-        <header>
-            <img src="logo_esigelec.jpg" alt="voici le logo de l'esigelec" class="logo">
-        <header>
-        
-        <nav>
-            
-            <div class="container">
-                <p class="nom_asso">RUNNING</p>
-             
-
-            </div>
-        </nav>
-
         <main>
             <section>
             <?php include('connextionSQL.php'); ?>

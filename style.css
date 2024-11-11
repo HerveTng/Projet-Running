@@ -1,48 +1,70 @@
-.logo{
+.logo {
     width: 20%;
     height: 10%;
 }
-.bouton{
+
+.bouton {
     border: 1px black solid;
-    margin:10px;
+    margin: 10px;
     padding: 5px;
     width: 25%;
     border-radius: 10px;
 }
-.container{
-    display:grid;
+
+.container {
+    display: grid;
     grid-template-columns: 4fr 1fr;
 
 }
-.nom_asso{
+
+.nom_asso {
     text-align: center;
     font-size: 50px;
 }
-.description{
+
+.encadre {
+    background-color: #007bff;
+    /* Fond bleu */
+    color: white;
+    /* Texte en blanc pour un bon contraste */
+    padding: 20px;
+    /* Espace intérieur pour un encadré plus agréable */
+    border-radius: 8px;
+    /* Coins arrondis */
     text-align: center;
-    border: 2px skyblue solid;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: aqua;
-    width: 60%;
+    /* Centre le texte à l'intérieur */
+    max-width: 600px;
+    /* Limite la largeur du bloc */
+    margin: 0 auto;
+    /* Centre horizontalement le bloc */
 }
-.description_activite{
+
+.description_activite {
     width: 30%
 }
-.activite{
+
+.activite {
     border: 1px black solid;
-    margin:10px;
+    margin: 10px;
     padding: 5px;
     border-radius: 10px;
     width: 60%;
 }
-.bouton_inscription{
+
+.bouton_inscription {
     text-align: center;
     border: 1px black solid;
-    margin:10px;
+    margin: 10px;
     padding: 5px;
     width: 25%;
     border-radius: 10px;
-    
+
+}
+
+.back2 {
+    background-color: #98b5ea;
+}
+
+.back {
+    background-color: #f4f4f9;
 }
