@@ -32,8 +32,8 @@ include('navbar.php');
                             <input type="date" class="form-control espace-bas" id="date" name="date" placeholder="la date..." required min="<?php date_default_timezone_set('Europe/Paris'); echo date('Y-m-d'); ?>">
                         </div>
                         <div class="col-md-6">
-                            <label for="heure" class="form-label">L'heure</label>
-                            <input type="time" class="form-control espace-bas" id="heure" name="heure" placeholder="l'heure du rendes-vous..." required>
+                                <label for="heure" class="form-label">L'heure</label>
+                                <input type="time" class="form-control espace-bas" id="heure" name="heure" placeholder="l'heure du rendes-vous..." required>
                         </div>
                     </div>
 
