@@ -91,7 +91,7 @@ include('navbar.php');
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    <?php else: ?>
+                                                    <?php elseif (($userInscrit == false) && $train['nombre_Max'] > 0): ?>
                                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#<?php echo htmlspecialchars($train['entrainement_Id']); ?>">
                                                             S'inscrire
                                                         </button>
@@ -114,6 +114,8 @@ include('navbar.php');
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <?php else: ?>
+                                                            <h4 class="rouge">Cette entrainement est complét</h4>
                                                     <?php endif; ?>
                                                 </div>
                                             </div>

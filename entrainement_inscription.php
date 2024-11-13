@@ -23,8 +23,8 @@ if (isset($_SESSION['entrainement_Id'], $_SESSION['user_mail'])) {
         'nombre' => $nombre,
         'entrainement_Id' => $nom_course,
     ]))
-    
-    if ($statement->execute([
+
+    if ($statement1->execute([
         'nom_course' => $nom_course,
         'mail_inscrit' => $mail_inscrit,
     ])) {
