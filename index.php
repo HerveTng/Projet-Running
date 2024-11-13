@@ -20,7 +20,8 @@ include('navbar.php');
                 <div class="row">
                     <p class="encadre">
                         Running est un club de l'esigelec qui organise des course dans la ville de rouen pour les etudiants de l'ESIGELEC.
-                        Ceci est un site web ou les étudiants pourront se connecter et s'inscrire à des courses. 
+                        Ceci est un site web ou les étudiants pourront s'inscrire aux courses.
+                        Veuillez vous connecter pour vous inscrire aux courses ou vous inscrire si vous ne l'avez pas encore fait. 
                     </p>
                 </div>
                 <div class="row text-center">
