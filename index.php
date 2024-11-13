@@ -19,14 +19,8 @@ include('navbar.php');
             <div class="card back2 p-4" style="max-width: 1000px; width: 100%;">
                 <div class="row">
                     <p class="encadre">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.
+                        Running est un club de l'esigelec qui organise des course dans la ville de rouen pour les etudiants de l'ESIGELEC.
+                        Ceci est un site web ou les étudiants pourront se connecter et s'inscrire à des courses. 
                     </p>
                 </div>
                 <div class="row text-center">
