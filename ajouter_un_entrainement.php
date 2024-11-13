@@ -8,6 +8,7 @@ include('navbar.php');
 
 <body class="back">
     <div class="container d-flex justify-content-center align-items-center">
+        <?php if (isset($_SESSION['user_id'])): ?>
         <div class="card mt-5" style="max-width: 900px; width: 100%;">
             <h2 class="text-center mb-4">Création d'un entrainement</h2>
             <form method="POST" action="creation_entrainementSQL.php">
@@ -61,5 +62,8 @@ include('navbar.php');
                 </div>
             </form>
         </div>
+        <?php else: ?>
+            <l>Vous devez vous connecter pour accéder a cette page</l>
+        <?php endif; ?>
     </div>
 </body>
