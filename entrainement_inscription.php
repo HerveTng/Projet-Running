@@ -32,12 +32,9 @@ if (isset($_SESSION['entrainement_Id'], $_SESSION['user_mail'])) {
         header("Location: index.php");
         exit();
     } else {
-        // Message d'erreur en cas d'échec d'insertion
         echo "Erreur lors de l'insertion des données.";
     }
 } else {
-    // Message d'erreur si les variables attendues ne sont pas définies
     echo "Données d'inscription manquantes.";
-    //echo $_SESSION['entrainement_Id'];
 }
 ?>

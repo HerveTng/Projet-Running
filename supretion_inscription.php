@@ -11,10 +11,10 @@ if (isset($_SESSION['entrainement_Id'], $_SESSION['user_mail'])) {
     $statement0 = $db->prepare('SELECT nombre_Max FROM entrainement WHERE entrainement_Id = :entrainement_Id');
     $statement1 = $db->prepare("DELETE FROM liste_inscrit WHERE nom_Course = :nom_course AND mail_Inscrit = :mail_inscrit");
     $statement2 = $db->prepare("UPDATE entrainement SET nombre_Max= :nombre WHERE entrainement_Id = :entrainement_Id ");
-    
+
     if ($statement0->execute([
         'entrainement_Id' => $nom_course,
-    ]))
+    ])){}
 
     $result = $statement0->fetch(PDO::FETCH_ASSOC);
     $nombre = $result['nombre_Max'] + 1;
@@ -22,9 +22,9 @@ if (isset($_SESSION['entrainement_Id'], $_SESSION['user_mail'])) {
     if ($statement2->execute([
         'nombre' => $nombre,
         'entrainement_Id' => $nom_course,
-    ]))
-
-    if ($statement->execute([
+    ])){}
+    
+    if ($statement1->execute([
         'nom_course' => $nom_course,
         'mail_inscrit' => $mail_inscrit,
     ])) {
@@ -32,11 +32,9 @@ if (isset($_SESSION['entrainement_Id'], $_SESSION['user_mail'])) {
         header("Location: index.php");
         exit();
     } else {
-        // Message d'erreur en cas d'échec d'insertion
         echo "Erreur lors de l'insertion des données.";
     }
 } else {
-    // Message d'erreur si les variables attendues ne sont pas définies
     echo "Données d'inscription manquantes.";
 }
 ?>

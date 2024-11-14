@@ -1,5 +1,5 @@
 <?php
-
+/*
 $user = 'grp_7_1';
 $pass = '2WFYYWGcTsokJt';
 
@@ -11,8 +11,8 @@ try
 {
     die('Erreur : '.$e->getMessage());
 }
+*/
 
-/*
 $user2 = 'root';
 $pass2 = 'root';
 
@@ -24,6 +24,6 @@ try
 {
     die('Erreur : '.$e->getMessage());
 }
-*/
+
 
 ?>
