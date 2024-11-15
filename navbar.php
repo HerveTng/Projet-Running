@@ -46,7 +46,7 @@ include('head.php');
           <?php else: ?>
 
             <a class="btn btn-primary" href="inscription.php" role="button">Inscription</a>
-            <a class="btn btn-primary btn-espace" href="connexion.php" role="button">Conexion</a>
+            <a class="btn btn-primary btn-espace" href="connexion.php" role="button">Connexion</a>
           <?php endif; ?>
 
         </div>
