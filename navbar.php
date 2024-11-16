@@ -2,8 +2,8 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="connexion.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="connexion.css">
 </head>
 
 <?php
@@ -36,6 +36,9 @@ include('head.php');
             <?php if (isset($_SESSION['user_id']) && isset($_SESSION['user_is_membreClub']) && $_SESSION['user_is_membreClub'] == 1): ?>
               <li class="nav-item">
                 <a class="nav-link active" href="ajouter_un_entrainement.php">Ajouter un entrainement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Liste_des_membre.php">Liste des membre</a>
               </li>
             <?php else: ?>
             <?php endif; ?>

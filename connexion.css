@@ -35,10 +35,10 @@
     background-color: #f4f4f9;
 }
 
-.sidebar {
+/* .sidebar {
      background-color: rgba(255, 255, 255, 0.523);
      backdrop-filter:blur(30px);
-}
+} */
 
 .largeur {
     width: 33%;

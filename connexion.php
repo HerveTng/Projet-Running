@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="fr">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
     <link rel="stylesheet" href="connexion.css">
 </head>
 
@@ -16,8 +16,8 @@ include('navbar.php');
 ?>
 
 <body class="back">
-    <div class="container d-flex justify-content-center align-items-center" style="height: 55vh; padding-top: 3vh;">
-        <div class="card p-4" style="max-width: 400px; width: 100%;">
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="card p-4 mt-4" style="max-width: 400px; width: 100%;">
             <h2 class="text-center mb-4">Connexion</h2>
             <form action="submit_connexion.php" method="post" class="formcon">
                 <div class="mb-3">
